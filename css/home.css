@@ -33,25 +33,23 @@ h3 {
 }
 
 /* HEADER */
-.bg-dark {
-    
-}
+
 .navbar-brand {
     margin-left: 5%;
     filter: contrast(175%) brightness(3%) invert(1);
 }
 
-header {
+/*header {
     margin-top: -122px;
     position: relative;
     top: 120px;
-    /*background-image: linear-gradient(to TOP, rgba(255,0,0,0), #212529);    */
+    /*background-image: linear-gradient(to TOP, rgba(255,0,0,0), #212529);    
     background-color: #212529a8;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;    
-}
+}*/
 
 .header__logo {
     padding: 10px;    
@@ -78,12 +76,13 @@ nav li {
     
 }
 .navbar-dark{
+    width: 100%;
     z-index: 1;
-    margin-top: -130px;
-    position: relative;
-    top: 120px;
+    /*margin-top: -130px;*/
+    position: absolute;
+    /*top: 120px;*/
     background-color: #212529a8;
-    /*background-image: linear-gradient(to TOP, rgba(255,0,0,0), #212529);    */
+    /*background-image: linear-gradient(to TOP, rgba(255,0,0,0), #212529);*/
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -125,25 +124,46 @@ nav li a:hover{
 
 /* SLIDER */
 
-.slider{
-    background-image: url("../img/slider2.jpg");
+/* CONTROLES CAROUSEL*/
+
+.carousel-control-prev, .carousel-control-next {
+    /*opacity: 0;*/
+    width: 8%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 25px;
+    height: 30px;
+}    
+
+.slider1, .slider2, .slider3{    
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center
+}
+.slider1{
+    background-image: url("../img/slider2.jpg");
+}
+.slider2{
+    background-image: url("../img/slider.jpg");
+}
+.slider3{
+    background-image: url("../img/slider3.jpg");
 }
 
 .slider__filtro{
     background-color: #0000006b;
     width: 40%;
     height: 100%;
+    position: relative;
+    top: 127px;
 }
-
 
 .slider__texto{
     padding: 70px;
-    padding-left: 100px;
-    width: 25%;
+    padding-left: 14%;
+    width: 33%;
     position: relative;
     top: -80%;              /*Quedo como queria pero nose si es la mejor forma para colocar el texto por delante del filtro*/ 
 }
@@ -163,7 +183,7 @@ nav li a:hover{
 .slider__boton{
     position: relative;
     top: -80%;
-    padding-left: 100px;    
+    padding-left: 14%;    
 }
 
 .slider__boton button{

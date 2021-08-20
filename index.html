@@ -17,38 +17,41 @@
     <title>Veterinaria Las cuadreras</title>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark">    
-    <a class="navbar-brand" href="index.html">
-        <img src="img/logoclasic.svg" alt="logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pages/productoa.html">Medicamentos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="pages/productob.html">Talabarteria</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="pages/contacto.html">Contacto</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-</nav>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">    
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logoclasic.svg" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/productoa.html">Medicamentos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/productob.html">Talabarteria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+</header>
+
 
 <body>
 
@@ -60,14 +63,42 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="img/slider2.jpg" alt="First slide">
+          <div class="carousel-item active">            
+            <article class="slider1">
+                <div class="slider__filtro"></div>
+                <div class="slider__texto">                
+                    <h1>Las Cuadreras</h1>
+                    <span>Distribución y Veterinaria de Productos para Equinos Deportivos</span>
+                </div>
+                <div class="slider__boton">
+                    <a href="pages/nosotros.html"><button>Ver mas</button></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="carousel-item">
+            <article class="slider2">
+                <div class="slider__filtro"></div>
+                <div class="slider__texto">                
+                    <h1>Artrosan Equino</h1>
+                    <span>Antiartrósico antiartrítico inyectable. Para la prevención y el tratamiento de la osteoartritis equina</span>
+                </div>
+                <div class="slider__boton">
+                    <a href="pages/nosotros.html"><button>Ver mas</button></a>
+                </div>
+            </article>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/slider2.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/slider2.jpg" alt="Third slide">
+            <article class="slider3">
+                <div class="slider__filtro"></div>
+                <div class="slider__texto">                
+                    <h1>Ampiline Large</h1>
+                    <span>Antibiótico Bactericida de amplio espectro</span>
+                </div>
+                <div class="slider__boton">
+                    <a href="pages/nosotros.html"><button>Ver mas</button></a>
+                </div>
+            </article>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -78,20 +109,9 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+    </div>
 
-    <section>
-        <article class="slider">
-            <div class="slider__filtro"></div>
-            <div class="slider__texto">                
-                <h1>Las Cuadreras</h1>
-                <span>Distribución y Veterinaria de Productos para Equinos Deportivos</span>
-            </div>
-            <div class="slider__boton">
-                <a href="pages/nosotros.html"><button>Ver mas</button></a>
-            </div>
-        </article>
-    </section>
+    
 
     <!-- Seccion de productos -->
     <section>
