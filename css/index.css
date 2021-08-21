@@ -167,21 +167,19 @@ nav li a:hover {
 /* PRODUCTOS */
 .categorias {
   display: flex; }
-
-.categorias__productoA {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  background-image: url("../img/farmacos.jpg");
-  background-size: cover;
-  background-position: left; }
-
-.categorias__productoB {
-  height: 400px;
-  width: 50%;
-  background-image: url("../img/talabarteria.jpg");
-  background-size: cover;
-  background-position: left; }
+  .categorias .categorias__productoA {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-image: url("../img/farmacos.jpg");
+    background-size: cover;
+    background-position: left; }
+  .categorias .categorias__productoB {
+    height: 400px;
+    width: 50%;
+    background-image: url("../img/talabarteria.jpg");
+    background-size: cover;
+    background-position: left; }
 
 .categorias__productoA a, .categorias__productoB a {
   display: flex;
@@ -279,9 +277,6 @@ nav li a:hover {
 
 */
 /* FORMULARIO */
-form {
-  /*background-color: rgb(115, 115, 255);*/ }
-
 /* TABLA */
 table {
   border: 2px solid;
