@@ -1,5 +1,5 @@
 var slider = tns({
-    container: '.my-slider',
+    container: '.clientes__slider',
     /*fixedWidth: 800,            
     /*slideBy: 'page',*/
     /*autoWidth: true,*/
@@ -9,7 +9,7 @@ var slider = tns({
     speed: 4000,                            
     responsive: {      
         1200: {
-            fixedWidth: 200,                      
+            fixedWidth: 180,                      
             gutter: 100,
             edgePadding: 100,
             items: 6,

@@ -1,1 +1,15 @@
-$color-principal: #D15847;
+$color-acento: #D15847;
+$color-secundario: #494949;
+$color-transparencia:#141414a8;
+$titulo-Secciones: white;
+
+
+.boton{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;  
+    background: $color-acento;
+    padding: 7px 10px;
+    border: solid #D15847 2px;
+    text-decoration: none;    
+}
