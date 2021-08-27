@@ -179,10 +179,11 @@ nav li a:hover {
 
 /* PRODUCTOS */
 .categorias {
-  display: flex; }
+  display: flex;
+  height: 400px; }
   .categorias .categorias__productoA {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+        flex-direction: column;    */
     width: 50%;
     background-image: url("../img/farmacos.jpg");
     background-size: cover;
@@ -199,7 +200,7 @@ nav li a:hover {
       background-color: rgba(0, 0, 0, 0.411);
       height: 100%; }
   .categorias .categorias__productoB {
-    height: 400px;
+    /*height: 400px;*/
     width: 50%;
     background-image: url("../img/talabarteria.jpg");
     background-size: cover;
@@ -282,9 +283,6 @@ nav li a:hover {
   margin-bottom: -10%; }
 
 /* CONTACTO */
-#map {
-  height: 400px; }
-
 .contacto .contacto__imagen img {
   /*background-image: url("../img/contacto2.jpg");
         background-repeat: no-repeat;
@@ -292,6 +290,9 @@ nav li a:hover {
   width: 100%;
   margin-top: -17%;
   margin-bottom: -25%; }
+
+iframe {
+  width: 100%; }
 
 .contacto__descripcion {
   padding: 5% 0%;
