@@ -1,139 +1,95 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
-    /*border: solid 0.5px rgb(255, 0, 0);*/
-}
-body, html{
-    height: 100%;
-}
-
-/* GENERAL */
-h1{
-    color: #ffffff;    
-    font-family: 'Montserrat', sans-serif;   
-    font-size: 48px;    
-}
-
-h2 {
-    color: #ffffff;
-    /*background-color: black; */
-    font-family: 'Montserrat', sans-serif;   
-    font-size: 96px;
-}
-
-h3 {
-    color: rgba(207, 12, 0, 0.18);
-    /*background-color: black; */
-    font-family: 'Montserrat', sans-serif;   
-    font-size: 180px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-/* HEADER */
-header {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;    
-}
-
-.header__logo {
-    padding: 10px;    
-}
-
-nav ul a {
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #1F1F1F;
-    padding-bottom: 48px;
-    /*padding: 20px;*/
-}
-
-nav li {
-    display: inline;
-    padding: 15px;
-    
-}
-
-nav li a:hover{
-    color: #D15847;
-    font-size: 120%;
-    border-bottom: 4px solid #D15847;
-}
-
-.header__redes img:hover{
-    width: 45px;
-    fill: #D15847;
-    
-}
-
-.header__redes img{
-    transition: width 1s;
-    padding: 10px;
-    width: 35px;
-}
-
 /* SLIDER */
-
-.slider{
-    background-image: url("../img/slider2.jpg");
-    height: 600px;
+/* CONTROLES CAROUSEL*/
+.carousel-control-prev, .carousel-control-next {
+    /*opacity: 0;*/
+    width: 8%; }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 25px;
+    height: 30px; }
+  
+  .slider1 {
+    height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center
-}
+    background-position: center; }
+  
+  .slider2 {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  
+  .slider3 {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  
+  .slider1 {
+    background-image: url("../img/slider6.jpg"); }
+  
+  .slider2 {
+    background-image: url("../img/slider3.jpg"); }
+  
+  .slider3 {
+    background-image: url("../img/slider4.jpg"); }
 
-.slider__filtro{
+  .slider__producto{
+    position: absolute;
+    left: 55%;
+    /*top: 30%;*/
+    bottom: 13%;
+    }
+  .slider__producto img{
+    width: 112%;    
+    }    
+  
+  .slider__filtro {
     background-color: #0000006b;
     width: 40%;
     height: 100%;
-}
-
-
-.slider__texto{
-    padding: 70px;
-    padding-left: 100px;
-    width: 25%;
     position: relative;
-    top: -80%;              /*Quedo como queria pero nose si es la mejor forma para colocar el texto por delante del filtro*/ 
-}
-
-.slider__texto h1{
-    padding-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.slider__texto span{
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;   
-    font-size: 24px;  
-    width: 300px;
-}
-
-.slider__boton{
+    /*top: 127px;*/ }
+  
+  .slider__texto {
+    padding: 70px;
+    padding-left: 14%;
+    width: 38%;
     position: relative;
     top: -80%;
-    padding-left: 100px;    
-}
+    /*Quedo como queria pero nose si es la mejor forma para colocar el texto por delante del filtro*/ }
+    .slider__texto h1 {
+      padding-bottom: 20px;
+      text-transform: uppercase; }
+    .slider__texto span {
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      width: 300px; }
+  
+  .slider__boton {
+    position: absolute;
+    left: 14%;
+    bottom: 11%;
+    /*position: relative;
+    top: -80%;
+    padding-left: 14%;*/ }
+    .slider__boton button {
+      padding: 10px 20px 10px 20px; }
 
-.slider__boton button{
-    color: #ffffff;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;  
-    background: #D15847;
-    padding: 10px 20px 10px 20px;
-    border: solid #D15847 2px;
-    text-decoration: none;
-}
 
 /* PRODUCTOS */
+
+
+.productos__titulo h3{
+    /*padding-left: 10%;*/
+    padding: 5% 10%;
+    font-size: 32px;
+    background-color: rgb(245, 245, 245);
+    
+}
+
 .categorias{
     display: flex;               
 }
@@ -173,97 +129,4 @@ nav li a:hover{
 .categorias__productoA a:hover, .categorias__productoB a:hover{
     background-color: rgba(209, 88, 71, 0.55)
 
-}
-
-/* CLIENTES */
-
-.clientes__imagenes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 300px;
-    align-items: flex-start;
-}
-
-.clientes__titulo{
-    padding: 120px;
-    padding-left: 10%;
-}
-
-.clientes__titulo h2{
-    color: #1F1F1F;
-    font-size: 48px;
-}
-
-.clientes__imagenes img{        
-    height: 120px;
-}
-
-
-
-/* FOOTER */
-
-footer {
-    background-color: #494949;    
-}
-
-.footer{
-    filter: contrast(175%) brightness(3%) invert(1);
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 350px 50px;
-    grid-template-areas: "uno dos tres"
-                         "cuatro cuatro cuatro";
-}
-
-.primerElemento{
-    grid-area: uno;
-    align-self: center;    
-}
-
-.primerElemento img{
-    width: 100%;
-}
-
-.segundoElemento{
-    grid-area: dos;
-}
-
-.segundoElemento li{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.segundoElemento img{
-    padding-right: 15px;
-}
-.segundoElemento h4, .tercerElemento h4{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-}
-
-.tercerElemento{
-    grid-area: tres;
-}
-
-.tercerElemento__img{
-    display: inline-block;
-}
-
-.tercerElemento__img img{    
-    padding: 10px;
-}
-
-.cuartoElemento{
-    grid-area: cuatro;    
-    display: inline-block;
-    font-size: 13px;
-    font-family: 'Montserrat';
-    align-self: baseline;
 }

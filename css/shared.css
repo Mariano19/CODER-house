@@ -1,0 +1,197 @@
+.boton, button {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  background: #D15847;
+  padding: 7px 10px;
+  border: solid #D15847 2px;
+  text-decoration: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  /*border: solid 0.5px rgb(255, 0, 0);*/ }
+
+body, html {
+  height: 100%; }
+
+/* GENERAL */
+h1 {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  /*font-size: 48px;    */
+  font-size: 3vw; }
+
+h2 {
+  color: #ffffff;
+  /*background-color: black; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4vw;
+  font-weight: 600; }
+
+h3 {
+  /*color: rgba(207, 12, 0, 0.18);*/
+  /*background-color: black;
+    font-weight: 800;
+    text-transform: uppercase; */
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1vw; }
+
+/* HEADER */
+.navbar-brand {
+  margin-left: 5%;
+  filter: contrast(175%) brightness(3%) invert(1); }
+
+.header__logo {
+  padding: 10px; }
+
+ol, ul, dl {
+  margin-bottom: 0rem; }
+
+nav ul a {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  /*color: #1F1F1F;*/
+  padding-bottom: 48px;
+  /*padding: 20px;*/ }
+
+nav li {
+  display: inline;
+  padding: 15px; }
+
+.navbar-dark {
+  width: 100%;
+  z-index: 1;
+  /*margin-top: -130px;*/
+  position: absolute;
+  /*top: 120px;
+    background-color: #212529a8;*/
+  background-image: linear-gradient(to TOP, rgba(255, 0, 0, 0), #212529); }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff; }
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #D15847; }
+
+.header__redes img {
+  transition: width 1s;
+  padding: 10px;
+  width: 35px; }
+
+/*HOVER*/
+nav li a:hover {
+  text-decoration: none;
+  color: #D15847;
+  /*font-size: 120%;*/
+  /*border-bottom: 4px solid #D15847;*/ }
+
+.header__redes img:hover {
+  width: 45px;
+  fill: #D15847; }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: space-evenly; } }
+
+/* CLIENTES-LABORATORIOS */
+/*control slider*/
+.tns-outer [aria-controls], .tns-outer [data-action] {
+  display: none; }
+
+.clientes {
+  /*margin-bottom: 10%;
+    padding-bottom: 7%;
+    margin-top: 8%;*/
+  background-color: whitesmoke;
+  padding: 4%; }
+  .clientes .clientes__titulo {
+    padding: 5%;
+    /* padding: 120px; */
+    padding-left: 10%;
+    text-transform: uppercase; }
+    .clientes .clientes__titulo h2 {
+      color: #1F1F1F;
+      font-size: 2vw; }
+
+/* FOOTER */
+footer {
+  background-color: #494949; }
+  footer .footer1 {
+    padding: 20px; }
+    footer .footer1 .row {
+      filter: contrast(175%) brightness(3%) invert(1);
+      padding: 50px; }
+      footer .footer1 .row .primerColumna, footer .footer1 .row .segundoColumna, footer .footer1 .row .tercerColumna {
+        padding: 15px 40px; }
+      footer .footer1 .row .primerColumna img {
+        width: 70%; }
+      footer .footer1 .row .segundoColumna {
+        padding-left: 9%; }
+        footer .footer1 .row .segundoColumna li {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          padding-top: 10px;
+          padding-bottom: 10px; }
+        footer .footer1 .row .segundoColumna img {
+          padding-right: 15px; }
+      footer .footer1 .row h4 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        padding-bottom: 20px; }
+      footer .footer1 .row .tercerColumna {
+        padding-left: 9%; }
+        footer .footer1 .row .tercerColumna img {
+          padding: 10px; }
+  footer .footer2 {
+    background-color: #945148;
+    padding: 20px; }
+    footer .footer2 .cuartaColumna {
+      text-align: center;
+      font-size: 12px;
+      font-family: 'Montserrat';
+      color: white; }
+
+/* RESPONSIVE MOBILE*/
+@media (max-width: 576px) {
+  .slider__texto span {
+    font-size: 14px; }
+  .nosotros__descripcion {
+    font-size: 14px; }
+  .nosotros__descripcion h3 {
+    font-size: 18px; }
+  .categorias__productoA, .categorias__productoB {
+    height: 200px; }
+  .clientes__imagenes img {
+    height: 80px; }
+  .navbar-brand img {
+    width: 120px; }
+  .slider1, .slider2, .slider3 {
+    height: 500px; }
+  .slider__filtro {
+    top: 65%;
+    width: 100%; }
+  .slider__texto {
+    padding: 30px;
+    padding-top: 100px;
+    padding-left: 14%;
+    width: 75%;
+    position: relative;
+    top: -49%; }
+  .slider__boton button {
+    padding: 5px 10px 5px 10px;
+    font-size: 14px; }
+  .slider__boton {
+    z-index: 2;
+    position: absolute;
+    top: 81%;
+    left: 72%;
+    padding-left: 0px; } }
