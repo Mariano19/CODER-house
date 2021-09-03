@@ -139,41 +139,47 @@ nav li a:hover {
   background-position: center; }
 
 .slider1 {
-  background-image: url("../img/slider1.jpg"); }
+  background-image: url("../img/slider/slider__home1.jpg"); }
 
 .slider2 {
-  background-image: url("../img/slider2.jpg"); }
+  background-image: url("../img/slider/slider__home2.jpg"); }
 
 .slider3 {
-  background-image: url("../img/slider3.jpg"); }
+  background-image: url("../img/slider/slider__home3.jpg"); }
 
-.slider__filtro {
-  background-color: #0000006b;
-  width: 40%;
-  height: 100%;
-  position: relative;
-  /*top: 127px;*/ }
-
+/*.slider__filtro{
+    background-color: #0000006b;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    /*top: 127px;
+}*/
 .slider__texto {
-  padding: 70px;
   padding-left: 14%;
-  width: 33%;
-  position: relative;
-  top: -80%;
-  /*Quedo como queria pero nose si es la mejor forma para colocar el texto por delante del filtro*/ }
+  width: 40%;
+  position: absolute;
+  top: 45%; }
   .slider__texto h1 {
+    font-size: 2.5vw;
+    width: 80%;
     padding-bottom: 20px;
     text-transform: uppercase; }
   .slider__texto span {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.1vw;
     width: 300px; }
 
+.slider__producto {
+  position: absolute;
+  left: 55%;
+  top: 35%;
+  /*bottom: 13%;*/ }
+
 .slider__boton {
-  position: relative;
-  top: -80%;
-  padding-left: 14%; }
+  position: absolute;
+  left: 14%;
+  bottom: 11%; }
   .slider__boton button {
     padding: 10px 20px 10px 20px; }
 
@@ -216,6 +222,9 @@ nav li a:hover {
       text-transform: uppercase;
       background-color: rgba(0, 0, 0, 0.411);
       height: 100%; }
+
+a:hover {
+  text-decoration: none; }
 
 .categorias__productoA a:hover, .categorias__productoB a:hover {
   background-color: rgba(209, 88, 71, 0.55); }

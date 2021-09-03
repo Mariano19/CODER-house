@@ -205,9 +205,36 @@ footer {
     }   
 }
 
+
+/*BTN STYLE GENERAL-----------------*/
+.btn-primary{
+    color: #ffffff;
+    /*font-size: 18px;*/
+    font-family: 'Montserrat', sans-serif;  
+    background: #D15847;    
+    border: solid #D15847 2px;
+    /*border-radius: 0;*/
+}    
+.btn-primary:active:focus, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background: #e76958;
+    border: solid #e76958 2px;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    background: #e76958;
+    border: solid #e76958 2px;
+}
+
+/*---------------------------------------------*/
+
+
+
 button{
     @extend .boton;
 }
+
+
+
+
 
 
 /* RESPONSIVE MOBILE*/

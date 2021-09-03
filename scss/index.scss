@@ -152,44 +152,50 @@ nav li a:hover{
 }
 
 @for $i from 1 to 4 {
-    .slider#{$i}{ background-image: url('../img/slider#{$i}.jpg');        
+    .slider#{$i}{ background-image: url('../img/slider/slider__home#{$i}.jpg');        
     }   
 }
 
-.slider__filtro{
+/*.slider__filtro{
     background-color: #0000006b;
     width: 40%;
     height: 100%;
     position: relative;
-    /*top: 127px;*/
-}
+    /*top: 127px;
+}*/
 
 .slider__texto{
-    padding: 70px;
     padding-left: 14%;
-    width: 33%;
-    position: relative;
-    top: -80%;              /*Quedo como queria pero nose si es la mejor forma para colocar el texto por delante del filtro*/ 
+    width: 40%;
+    position: absolute;
+    top: 45%;              
 
     h1{
+        font-size: 2.5vw;
+        width: 80%;
         padding-bottom: 20px;
         text-transform: uppercase;
     }
 
     span{
         color: #ffffff;
-        font-family: 'Montserrat', sans-serif;   
-        font-size: 24px;  
-        width: 300px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1vw;
+        width: 300px; ;
     }
 }
 
-
+.slider__producto{
+    position: absolute;
+    left: 55%;
+    top: 35%;
+    /*bottom: 13%;*/
+}
 
 .slider__boton{
-    position: relative;
-    top: -80%;
-    padding-left: 14%;  
+    position: absolute;
+    left: 14%;
+    bottom: 11%;  
     
     button{
         @extend .boton;        
@@ -247,7 +253,9 @@ nav li a:hover{
     }    
 
 }
-
+a:hover{
+    text-decoration: none;
+}
 .categorias__productoA a:hover, .categorias__productoB a:hover{
     background-color: rgba(209, 88, 71, 0.55)
 
