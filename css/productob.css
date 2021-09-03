@@ -1,5 +1,13 @@
 /* SLIDER */
 /* CONTROLES CAROUSEL*/
+/*.carousel-inner{
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/Group43.jpg");
+
+}*/
 .carousel-control-prev, .carousel-control-next {
     /*opacity: 0;*/
     width: 8%; }
@@ -12,7 +20,7 @@
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; }
+    background-position: bottom; }
   
   .slider2 {
     height: 700px;
@@ -27,45 +35,47 @@
     background-position: center; }
   
   .slider1 {
-    background-image: url("../img/slider6.jpg"); }
+    background-image: url("../img/slider/slider__talabarteria.jpg"); }
   
   .slider2 {
     background-image: url("../img/slider3.jpg"); }
   
   .slider3 {
     background-image: url("../img/slider4.jpg"); }
-
+  
   .slider__producto{
     position: absolute;
-    left: 55%;
-    /*top: 30%;*/
-    bottom: 13%;
+    left: 58%;
+    top: 32%;
+    /*bottom: 13%;*/
     }
   .slider__producto img{
-    width: 112%;    
+    width: 62%;    
     }    
   
-  .slider__filtro {
+  /*.slider__filtro {
     background-color: #0000006b;
     width: 40%;
     height: 100%;
     position: relative;
-    /*top: 127px;*/ }
+    /*top: 127px; }*/
   
   .slider__texto {
-    padding: 70px;
+    /*padding: 70px;*/
     padding-left: 14%;
-    width: 38%;
-    position: relative;
-    top: -80%;
-    /*Quedo como queria pero nose si es la mejor forma para colocar el texto por delante del filtro*/ }
+    width: 40%;
+    position: absolute;
+    top: 45%;
+    }
     .slider__texto h1 {
+      font-size: 2.5vw;
+      width: 80%;
       padding-bottom: 20px;
       text-transform: uppercase; }
     .slider__texto span {
       color: #ffffff;
       font-family: 'Montserrat', sans-serif;
-      font-size: 24px;
+      font-size: 1.1vw;
       width: 300px; }
   
   .slider__boton {
@@ -82,51 +92,8 @@
 /* PRODUCTOS */
 
 
-/* PRUEDA ESTILOS*/
-.prodscol {
-    float: left;
-    width: calc(25% - 10px);
-    margin: 5px;
-    padding: 15px;
-}
-.product-card {
-    display: block;
-    position: relative;
-    width: 100%;
-    padding: 18px;
-    border: 1px solid #e1e7ec;
-    border-radius: 7px;
-    background-color: #ffffff;
-}
-.product-card .product-thumb {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-.product-card .product-thumb > img {
-    display: block;
-    width: 70%;
-    margin: 0 auto;
-}
-.product-card .product-title {
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: normal;
-    text-align: center;
-}
-.product-card .product-title > a {
-    /*font-size: 12px;*/
-    transition: color .3s;
-    color: #374250;
-    text-decoration: none;
-}
-.product-card .product-price {
-    margin-bottom: 10px;
-    color: #606975;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-}
+/* -----PRUEDA ESTILOS---------------------*/
+
 .separador {
     border-top: 1px solid #e1e7ec;
     clear: both;
@@ -143,14 +110,44 @@
 
 
 
+.card{
+  width: 30%;
+  margin: 10px;
+}
 
+.cols-4{
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.btn-primary{
+  color: #ffffff;
+  /*font-size: 18px;*/
+  font-family: 'Montserrat', sans-serif;  
+  background: #D15847;    
+  border: solid #D15847 2px;
+  /*border-radius: 0;*/
+}
+.btn-primary:hover{
+  background: #e76958;
+  border: solid #e76958 2px;
+  
+}
+/*sidebar*/
+.categorias__articulos a{
+  color: #D15847;
+  /*color: black;*/
 
+}
 
+/*---------------------------------------------*/
+.productos__titulo{
+  padding-bottom: 50px;
+}
 
 .productos__titulo h3{
     /*padding-left: 10%;*/
-    padding: 5% 10%;
+    padding: 4% 14%;
     font-size: 32px;
     background-color: rgb(245, 245, 245);
     
