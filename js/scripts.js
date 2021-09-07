@@ -29,3 +29,11 @@ var slider = tns({
         },
     },
 });
+
+
+/*PRELOADER*/
+window.onload = function(){
+    var contenedor = document.getElementById('preloder');
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity = '0'; 
+}
