@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://kit.fontawesome.com/9b01b79774.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/shared.css">
@@ -50,10 +51,22 @@
                 <a class="nav-link" href="pages/contacto.html">Contacto</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <div class="barra">
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search "></i></button>
+                    <input type="text" class="input-search" placeholder="Buscador...">            
+                </div>
+                <div class="btn-insta">
+                    <a href="#" class="btn btn-secondary"><i class="fab fa-instagram fa-2x"></i></a>
+                
+                </div>              
+          </div>
+          
+          
+          <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          </form> -->
         </div>
     </nav>
 </header>
@@ -116,9 +129,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-    </div>
-
-    
+    </div>        
 
     <!-- Seccion de productos -->
     <section>
@@ -132,16 +143,37 @@
         </article>
     </section>
 
-    
+    <!-- Seccion perks -->
+    <div class="perks container">           
+        <div class="row">     
+            <div class="col-sm-4 ">
+                <div class="perks__iconos border-right">
+                    <img src="img/icons/secure.svg" alt="">
+                    <span>Sitio Seguro</span>                    
+                </div>                                                 
+            </div>  
+            <div class="col-sm-4 ">
+                <div class="perks__iconos border-right">
+                    <img src="img/icons/profile.svg" alt="">
+                    <span>15 Años de experiencia</span>                    
+                </div>                                                 
+            </div> 
+            <div class="col-sm-4 ">
+                <div class="perks__iconos">
+                    <img src="img/icons/truck.svg" alt="">
+                    <span>Envios a todo el país</span>                    
+                </div>                                                 
+            </div>             
+        </div>
+    </div>
+
     <!-- Seccion Nosotros-->
     <section>
         <article class="nosotros">                        
-            <div class="nosotros__imagen">                
-                <img src="img/nosotros2.jpg" alt="fondo">
-            </div>            
-            <div class="nosotros__titulo">
+            <div class="nosotros__parallax">                
+                <!--<img src="img/nosotros2.jpg" alt="fondo">  -->
                 <h2>Nosotros</h2>
-            </div>
+            </div>  
             <div class="nosotros__descripcion">
                 <h3>Quienes somos</h3>
                 <p>Desde nuestros comienzos en el año 1980 nuestro objetivo fué dar una rápida y efectiva respuesta a
@@ -157,12 +189,9 @@
     <!-- Seccion Contacto-->
     <section>
         <article class="contacto">                                     
-            <div class="contacto__imagen">
-                <img src="img/nosotros3.jpg" alt="fondo">                         
-            </div>  
-            <div class="contacto__titulo">
-                <h2>Contacto</h2>
-            </div>         
+            <div class="contacto__parallax">
+                <h2>Contacto</h2>                                        
+            </div>                       
             <div class="contacto__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.3426975881957!2d-57.94961438462431!3d-34.897848480627374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e42e31954bf7%3A0x988df58994637216!2sVeterinaria%20Las%20Cuadreras!5e0!3m2!1ses!2sar!4v1629944996151!5m2!1ses!2sar" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
@@ -274,7 +303,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
+    
     <script src="js/scripts.js"></script>
     
     

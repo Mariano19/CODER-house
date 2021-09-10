@@ -124,6 +124,61 @@ nav li a:hover{
     }        
 }
 
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #d158478f;
+  padding-right: 40px;
+  color:#fff;
+}
+.input-search::placeholder{
+  color:rgba(255,255,255,.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
 
 
 /* SLIDER */
@@ -261,6 +316,27 @@ a:hover{
 
 }
 
+/*PERKS*/
+
+.perks{
+    margin-top: 10%;
+    .perks__iconos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            height: 150px;
+            padding: 10px;
+        }
+        span{
+            padding-top: 15px;
+            font-size: 1.2vw;
+        }
+    }
+}
+
+
+
 /* CLIENTES */
 /*control slider*/
 .tns-outer [aria-controls], .tns-outer [data-action]{
@@ -272,19 +348,8 @@ a:hover{
     padding-bottom: 7%;
     margin-top: 8%;*/
     background-color: rgb(245, 245, 245);
-    padding: 4%;       
-
-    .clientes__titulo{
-        padding: 5%;
-        /* padding: 120px; */
-        padding-left: 10%;
-        text-transform: uppercase;        
-
-        h2{
-            color: #1F1F1F;
-            font-size: 2vw;
-        }
-    }    
+    padding: 4%; 
+     
 }
 
 
@@ -292,11 +357,10 @@ a:hover{
 
 .nosotros{
     padding-top: 18%;
-    img{
-        width: 100%; 
-        margin-top: -13%;
-        margin-bottom: 4%;
+    .nosotros__parallax{    
+        background-image: url("../img/nosotros.jpg");    
     }
+    
     .nosotros__descripcion{ 
         padding: 10%;
         /*padding-left: 10%;*/
@@ -314,80 +378,62 @@ a:hover{
     }    
 }
 
-/*PROPIEDADES EN COMUN*/
-.nosotros__titulo, .contacto__titulo{
-    /*margin-bottom: -7%;*/
-    display: flex;
-    align-items: flex-end;
-    padding-left: 10%;
-    /*background-image: linear-gradient(#d1584700, #cf0c0047);*/
-    background-color: rgba(209, 88, 71, 0.55);
-    /*height: 150px;*/
-    position: relative;  
-    text-transform: uppercase; 
+/*PROPIEDADES EN COMUN PARALLAX*/
+@each $i in nosotros__parallax, contacto__parallax {
+    .#{$i}{
+        height: 500px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }               
 }
 
 
-.nosotros__imagen, .contacto__imagen{
-    /*background-image: url("../img/nosotros.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;   */ 
-    display: block;        
-    overflow: hidden;
-    /*margin-top: -9%;*/
-    margin-bottom: -10%;
-    
-}
 
 /* CONTACTO */
 .contacto{
-    .contacto__imagen img{
-        /*background-image: url("../img/contacto2.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;   */
+    .contacto__parallax{    
+        background-image: url("../img/contacto.jpg");    
+    }    
+    iframe{
         width: 100%;
-        margin-top: -17%;
-        margin-bottom: -25%;
     }
-}
-
-iframe{
-    width: 100%;
-}
-
-.contacto__descripcion{
-    padding: 5% 0%;
-    font-family: 'Roboto Condensed', sans-serif;
-    .contacto__descripcion__datos{
-        /*border-right: 1px dashed #333;*/
-        font-size: 18px;
-    
-        h3{
-            font-size: 24px;
+    .contacto__descripcion{
+        padding: 5% 0%;
+        font-family: 'Roboto Condensed', sans-serif;
+        .contacto__descripcion__formulario button{
+            @extend .boton;
+            width: 100%;      
         }
-        p{
-            padding-right: 30%;
-            display: block;
-        }
-        ul{
-            padding: 7% 0%;
-            li{
-                padding: 10px 0px;
-    
-                span{
-                    padding-left: 18px;
+        .contacto__descripcion__datos{
+            /*border-right: 1px dashed #333;*/
+            font-size: 18px;
+        
+            h3{
+                font-size: 24px;
+            }
+            p{
+                padding-right: 30%;
+                display: block;
+            }
+            ul{
+                padding: 7% 0%;
+                li{
+                    padding: 10px 0px;
+        
+                    span{
+                        padding-left: 18px;
+                    }
                 }
             }
         }
+    
     }
-
-}
-
-/* FORMULARIO */
-
-.contacto__descripcion__formulario button{
-    @extend .boton;
-    width: 100%;      
 }
 
 

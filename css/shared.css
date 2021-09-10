@@ -40,6 +40,34 @@ h3 {
   font-size: 1vw; }
 
 /* HEADER */
+.btn-insta .btn {
+  border: 0;
+  border-radius: 0;
+  padding: 0; }
+
+.barra {
+  display: flex; }
+
+button:focus {
+  outline: 0; }
+
+.btn-insta {
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #d158478f;
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  margin-left: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.navbar {
+  align-items: baseline;
+  height: 300px; }
+
 .navbar-brand {
   margin-left: 5%;
   filter: contrast(175%) brightness(3%) invert(1); }
@@ -176,6 +204,10 @@ footer {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   background: #e76958;
   border: solid #e76958 2px; }
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: transparent;
+  border-color: transparent; }
 
 /*---------------------------------------------*/
 /* Seccion para el preloader */
