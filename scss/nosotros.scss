@@ -32,6 +32,77 @@
   }    
 }
 
+// RESPONSIVE MOBILE
+@media (max-width: 600px){
+
+    
+    //HEADER
+    .navbar {
+        height: auto;
+        //height: 140px;
+        .navbar-brand img{
+            width: 120px;   
+        } 
+    }
+    .navbar-dark{
+        background-color: rgba(0, 0, 0, 0.652);
+    }
+        
+    //NOSOTROS
+    .nosotros{
+        padding-top: 20%;
+
+        .nosotros__parallax{
+            height: 500px;
+            h2{
+                font-size: 28px;
+            }
+        }
+
+        .nosotros__descripcion{
+            h3{
+                font-size: 22px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+   
+
+    //LABORATORIOS
+    .clientes__imagenes img{        
+        height: 80px;
+    }  
+    //FOOTER
+    footer{
+        .footer1{
+            .row{
+                .primerColumna img{
+                    width: 100%;
+                }
+                .segundoColumna{
+                    padding-top: 50px;
+                    padding-left: 0;
+                    li span{
+                        font-size: 13px;
+                    }
+                }
+                .tercerColumna{
+                    padding-top: 50px;
+                    padding-left: 0;
+                    li span{
+                        font-size: 13px;
+                    }
+                }
+                
+            }
+        }
+
+    }
+
+}
+
 
 
 

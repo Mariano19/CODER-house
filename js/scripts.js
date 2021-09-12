@@ -58,7 +58,7 @@ $(function () {
         //headerColor: 'crimson', //Custom header color
         //backgroundColor: 'crimson', //Custom background button color
         position: "right", //Position: left | right
-        size:"80",
+        size:"60",
         zIndex:2,
 
 

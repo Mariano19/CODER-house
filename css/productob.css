@@ -51,12 +51,13 @@
   .slider__producto img {
     width: 63%; }
 
-/*.slider__filtro {
-    background-color: #0000006b;
-    width: 40%;
-    height: 100%;
-    position: relative;
-    /*top: 127px; }*/
+.slider__filtro {
+  background-color: #0000006b;
+  width: 45%;
+  height: 100%;
+  position: relative;
+  /*top: 127px; }*/ }
+
 .slider__texto {
   /*padding: 70px;*/
   padding-left: 14%;
@@ -118,3 +119,62 @@
   .productos .categorias__articulos a {
     color: #D15847;
     /*color: black;*/ }
+
+@media (max-width: 600px) {
+  .navbar {
+    height: auto; }
+    .navbar .navbar-brand img {
+      width: 120px; }
+  .navbar-dark {
+    background-color: rgba(0, 0, 0, 0.652); }
+  .slider1, .slider2, .slider3 {
+    height: 600px; }
+    .slider1 .slider__filtro, .slider2 .slider__filtro, .slider3 .slider__filtro {
+      top: 65%;
+      width: 100%; }
+    .slider1 .slider__producto, .slider2 .slider__producto, .slider3 .slider__producto {
+      left: 24%;
+      top: 25%; }
+      .slider1 .slider__producto img, .slider2 .slider__producto img, .slider3 .slider__producto img {
+        width: 70%; }
+    .slider1 .slider__texto, .slider2 .slider__texto, .slider3 .slider__texto {
+      width: 100%;
+      padding: 10px 30px;
+      padding-right: 84px;
+      position: relative;
+      top: -32%; }
+      .slider1 .slider__texto h1, .slider2 .slider__texto h1, .slider3 .slider__texto h1 {
+        font-size: 6vw; }
+      .slider1 .slider__texto span, .slider2 .slider__texto span, .slider3 .slider__texto span {
+        font-size: 12px; }
+    .slider1 .slider__boton, .slider2 .slider__boton, .slider3 .slider__boton {
+      z-index: 2;
+      position: relative;
+      top: 81%;
+      left: 72%;
+      padding-left: 0px; }
+      .slider1 .slider__boton .button, .slider2 .slider__boton .button, .slider3 .slider__boton .button {
+        padding: 5px 10px 5px 10px;
+        font-size: 14px; }
+  .productos .cols-4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center; }
+  .productos .card {
+    width: 44%; }
+  .clientes__imagenes img {
+    height: 80px; }
+  footer .footer1 .row .primerColumna img {
+    width: 100%; }
+  footer .footer1 .row .segundoColumna {
+    padding-top: 50px;
+    padding-left: 0; }
+    footer .footer1 .row .segundoColumna li span {
+      font-size: 13px; }
+  footer .footer1 .row .tercerColumna {
+    padding-top: 50px;
+    padding-left: 0; }
+    footer .footer1 .row .tercerColumna li span {
+      font-size: 13px; } }

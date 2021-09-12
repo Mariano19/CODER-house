@@ -47,12 +47,13 @@
     }    
   }
 
-  /*.slider__filtro {
+  .slider__filtro {
     background-color: #0000006b;
-    width: 40%;
+    width: 45%;
     height: 100%;
     position: relative;
     /*top: 127px; }*/
+  }
   
   .slider__texto {
     /*padding: 70px;*/
@@ -130,7 +131,116 @@
 }
 
 
+// RESPONSIVE MOBILE
+@media (max-width: 600px){
 
+    
+  //HEADER
+  .navbar {
+      height: auto;
+      //height: 140px;
+      .navbar-brand img{
+          width: 120px;   
+      } 
+  }
+  .navbar-dark{
+      background-color: rgba(0, 0, 0, 0.652);
+  }
+  
+  //SLIDER
+  .slider1, .slider2, .slider3 {
+      height: 600px;
+
+      .slider__filtro {
+          top: 65%;
+          width: 100%;
+      }
+
+      .slider__producto{
+        left: 14%;
+       top: 35%;
+      
+        img {
+          width: 88%;
+        }
+      }
+
+      .slider__texto{
+          width: 100%;
+          padding: 10px 30px;
+          padding-right: 84px;
+          position: relative;
+          top: -32%;
+
+          h1{
+              font-size: 6vw;
+          }
+          span{
+              font-size: 12px;
+          }            
+      }
+
+      .slider__boton{
+          z-index: 2;
+          position: relative;
+          top: 81%;
+          left: 72%;
+          padding-left: 0px;
+
+          .button{
+              padding: 5px 10px 5px 10px;
+              font-size: 14px;
+          }
+  
+      }
+
+  }
+
+  //ARTICULOS
+  .productos .cols-4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+  }
+  .productos .card {
+    width: 44%;
+  }
+
+ 
+  //LABORATORIOS
+  .clientes__imagenes img{        
+      height: 80px;
+  }  
+  //FOOTER
+  footer{
+      .footer1{
+          .row{
+              .primerColumna img{
+                  width: 100%;
+              }
+              .segundoColumna{
+                  padding-top: 50px;
+                  padding-left: 0;
+                  li span{
+                      font-size: 13px;
+                  }
+              }
+              .tercerColumna{
+                  padding-top: 50px;
+                  padding-left: 0;
+                  li span{
+                      font-size: 13px;
+                  }
+              }
+              
+          }
+      }
+
+  }
+
+}
 
 
   

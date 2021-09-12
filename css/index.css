@@ -426,14 +426,6 @@ footer {
       color: white; }
 
 @media (max-width: 600px) {
-  .nosotros__descripcion {
-    font-size: 14px; }
-  .nosotros__descripcion h3 {
-    font-size: 18px; }
-  .categorias__productoA, .categorias__productoB {
-    height: 200px; }
-  .clientes__imagenes img {
-    height: 80px; }
   .navbar {
     height: auto; }
     .navbar .navbar-brand img {
@@ -464,6 +456,12 @@ footer {
       .slider1 .slider__boton .button, .slider2 .slider__boton .button, .slider3 .slider__boton .button {
         padding: 5px 10px 5px 10px;
         font-size: 14px; }
+  .floating-wpp .floating-wpp-button img {
+    height: 50px;
+    width: 50px; }
+  .floating-wpp .floating-wpp-button {
+    width: 50px;
+    height: 50px; }
   .categorias .categorias__imagenes {
     height: 200px; }
     .categorias .categorias__imagenes .categorias__imagenes__productoB a, .categorias .categorias__imagenes .categorias__imagenes__productoA a {
@@ -505,6 +503,8 @@ footer {
         font-size: 13px; }
   .contacto .contacto__descripcion__formulario {
     margin-top: 40px; }
+  .clientes__imagenes img {
+    height: 80px; }
   footer .footer1 .row .primerColumna img {
     width: 100%; }
   footer .footer1 .row .segundoColumna {

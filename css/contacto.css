@@ -31,3 +31,52 @@
         padding: 10px 0px; }
       .contacto .contacto__descripcion .contacto__descripcion__datos ul li span {
         padding-left: 18px; }
+
+@media (max-width: 600px) {
+  .navbar {
+    height: auto; }
+    .navbar .navbar-brand img {
+      width: 120px; }
+  .navbar-dark {
+    background-color: rgba(0, 0, 0, 0.652); }
+  .perks .row {
+    width: 100%;
+    margin-left: 0; }
+    .perks .row .perks__iconos {
+      border-right: 0px solid #dee2e6;
+      padding-top: 40px; }
+      .perks .row .perks__iconos img {
+        height: 80px; }
+      .perks .row .perks__iconos span {
+        font-size: 12px;
+        padding-top: 5px; }
+  .contacto .contacto__parallax {
+    height: 500px; }
+    .contacto .contacto__parallax h2 {
+      font-size: 28px; }
+  .contacto .contacto__descripcion {
+    padding: 20px; }
+    .contacto .contacto__descripcion .contacto__descripcion__datos {
+      border-right: 0px;
+      border-bottom: 1px solid #dee2e6; }
+      .contacto .contacto__descripcion .contacto__descripcion__datos p {
+        font-size: 14px;
+        padding-right: 0; }
+      .contacto .contacto__descripcion .contacto__descripcion__datos ul li span {
+        font-size: 13px; }
+  .contacto .contacto__descripcion__formulario {
+    margin-top: 40px; }
+  .clientes__imagenes img {
+    height: 80px; }
+  footer .footer1 .row .primerColumna img {
+    width: 100%; }
+  footer .footer1 .row .segundoColumna {
+    padding-top: 50px;
+    padding-left: 0; }
+    footer .footer1 .row .segundoColumna li span {
+      font-size: 13px; }
+  footer .footer1 .row .tercerColumna {
+    padding-top: 50px;
+    padding-left: 0; }
+    footer .footer1 .row .tercerColumna li span {
+      font-size: 13px; } }
