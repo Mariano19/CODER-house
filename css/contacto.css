@@ -3,31 +3,17 @@
   /* FORMULARIO */ }
   .contacto iframe {
     width: 100%; }
-  .contacto .contacto__titulo {
-    /*margin-bottom: -7%;*/
+  .contacto .contacto__parallax {
+    background-image: url("../img/contacto.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    align-items: flex-end;
-    padding-left: 10%;
-    /*background-image: linear-gradient(#d1584700, #cf0c0047);*/
-    background-color: rgba(209, 88, 71, 0.55);
-    /*height: 150px;*/
-    position: relative;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase; }
-  .contacto .contacto__imagen {
-    /*background-image: url("../img/nosotros.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;   */
-    display: block;
-    overflow: hidden;
-    /*margin-top: -9%;*/
-    margin-bottom: -10%; }
-    .contacto .contacto__imagen img {
-      /*background-image: url("../img/contacto2.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;   */
-      width: 100%;
-      /*margin-top: -17%;*/
-      margin-bottom: -25%; }
   .contacto .contacto__descripcion {
     padding: 5% 0%;
     font-family: 'Roboto Condensed', sans-serif; }

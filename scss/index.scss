@@ -212,17 +212,17 @@ nav li a:hover{
     }   
 }
 
-/*.slider__filtro{
+.slider__filtro{
     background-color: #0000006b;
     width: 40%;
     height: 100%;
     position: relative;
-    /*top: 127px;
-}*/
+    /*top: 127px;*/
+}
 
 .slider__texto{
     padding-left: 14%;
-    width: 40%;
+    width: 34%;
     position: absolute;
     top: 45%;              
 
@@ -263,77 +263,92 @@ nav li a:hover{
 
 /* PRODUCTOS */
 .categorias{
-    display: flex; 
-    height: 400px;
-
-    .categorias__productoA {  
-        /*display: flex;
-        flex-direction: column;    */
-        width: 50%;
-        background-image: url("../img/farmacos.jpg");
-        background-size: cover;
-        background-position: left; 
-
-        a {
-            display: flex;    
-            justify-content: center;    
-            align-items: center;   
-            font-size: 4vw;
-            color: #F1FAEE;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            text-transform: uppercase;
-            background-color: rgba(0, 0, 0, 0.411);
-            height: 100%; 
-        }
-    }  
-    .categorias__productoB {    
-        /*height: 400px;*/
-        width: 50%;
-        background-image: url("../img/talabarteria.jpg");
-        background-size: cover;
-        background-position: left;   
-        
-        a {
-            display: flex;    
-            justify-content: center;    
-            align-items: center;   
-            font-size: 4vw;
-            color: #F1FAEE;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            text-transform: uppercase;
-            background-color: rgba(0, 0, 0, 0.411);
-            height: 100%; 
-        }
-    }    
+    
+    .categorias__imagenes{
+        display: flex; 
+        height: 400px;
+        //margin-top: 5%;
+    
+        .categorias__imagenes__productoA {  
+            /*display: flex;
+            flex-direction: column;    */
+            width: 50%;
+            background-image: url("../img/farmacos.jpg");
+            background-size: cover;
+            background-position: left; 
+    
+            a {
+                display: flex;    
+                justify-content: center;    
+                align-items: center;   
+                font-size: 3vw;
+                color: #F1FAEE;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                text-transform: uppercase;
+                background-color: rgba(0, 0, 0, 0.511);
+                height: 100%; 
+            }
+            a:hover{
+                background-color: rgba(209, 88, 71, 0.55)
+            }
+        }  
+        .categorias__imagenes__productoB {    
+            /*height: 400px;*/
+            width: 50%;
+            background-image: url("../img/talabarteria.jpg");
+            background-size: cover;
+            background-position: left;   
+            
+            a {
+                display: flex;    
+                justify-content: center;    
+                align-items: center;   
+                font-size: 3vw;
+                color: #F1FAEE;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                text-transform: uppercase;
+                background-color: rgba(0, 0, 0, 0.511);
+                height: 100%; 
+            }
+            a:hover{
+                background-color: rgba(209, 88, 71, 0.55)
+            }
+        }    
+    
+    }
 
 }
+
 a:hover{
     text-decoration: none;
 }
-.categorias__productoA a:hover, .categorias__productoB a:hover{
-    background-color: rgba(209, 88, 71, 0.55)
 
-}
 
 /*PERKS*/
 
 .perks{
     margin-top: 10%;
-    .perks__iconos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        img{
-            height: 150px;
-            padding: 10px;
+    .row{
+        width: 80%;
+        margin-left: 9%;
+
+        .perks__iconos{
+            border-right: 1px solid #dee2e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                height: 120px;
+                padding: 10px;
+            }
+            span{
+                padding-top: 15px;
+                font-size: 1.2vw;
+            }
         }
-        span{
-            padding-top: 15px;
-            font-size: 1.2vw;
-        }
-    }
+    }  
 }
 
 
@@ -357,7 +372,7 @@ a:hover{
 /* NOSOTROS */
 
 .nosotros{
-    padding-top: 18%;
+    padding-top: 10%;
     .nosotros__parallax{    
         background-image: url("../img/nosotros.jpg");    
     }
@@ -413,6 +428,7 @@ a:hover{
         }
         .contacto__descripcion__datos{
             /*border-right: 1px dashed #333;*/
+            border-right: 1px solid #dee2e6;
             font-size: 18px;
         
             h3{
@@ -505,11 +521,9 @@ footer {
 
 
 
-/* RESPONSIVE MOBILE*/
-@media (max-width: 576px){
-    .slider__texto span {        
-        font-size: 14px;
-    }
+// RESPONSIVE MOBILE
+@media (max-width: 600px){
+    
     .nosotros__descripcion {
         font-size: 14px;
     }
@@ -522,36 +536,165 @@ footer {
     .clientes__imagenes img{        
         height: 80px;
     }  
-    .navbar-brand img{
-        width: 120px;   
-    } 
+    //HEADER
+    .navbar {
+        height: auto;
+        //height: 140px;
+        .navbar-brand img{
+            width: 120px;   
+        } 
+    }
+    .navbar-dark{
+        background-color: rgba(0, 0, 0, 0.652);
+    }
+    
+    //SLIDER
     .slider1, .slider2, .slider3 {
         height: 500px;
-    }
-    .slider__filtro {
-    top: 65%;
-    width: 100%;
-    }
-    .slider__texto {        
-        padding: 30px;
-        padding-top: 100px;
-        padding-left: 14%;
-        width: 75%;
-        position: relative;
-        top: -49%;
-    }
-    .slider__boton button{
-        padding: 5px 10px 5px 10px;
-        font-size: 14px;
-    }
-    .slider__boton{
-        z-index: 2;
-        position: absolute;
-        top: 81%;
-        left: 72%;
-        padding-left: 0px;
+
+        .slider__filtro {
+            top: 65%;
+            width: 100%;
+        }
+
+        .slider__texto{
+            width: 100%;
+            padding: 10px 30px;
+            padding-right: 84px;
+            position: relative;
+            top: -32%;
+
+            h1{
+                font-size: 6vw;
+            }
+            span{
+                font-size: 12px;
+            }            
+        }
+
+        .slider__boton{
+            z-index: 2;
+            position: relative;
+            top: 81%;
+            left: 72%;
+            padding-left: 0px;
+
+            .button{
+                padding: 5px 10px 5px 10px;
+                font-size: 14px;
+            }
+    
+        }
 
     }
+    
+    //CATEGORIAS
+    .categorias{
+        .categorias__imagenes{
+            height: 200px;
+
+            .categorias__imagenes__productoB a, .categorias__imagenes__productoA a{
+                font-size: 4vw;
+            }
+        }
+    }
+    
+    //PERKS
+    .perks{
+        .row{
+            width: 100%;
+            margin-left: 0;
+            .perks__iconos{
+                border-right: 0px solid #dee2e6;
+                padding-top: 40px;
+                img{
+                    height: 80px;
+                }
+                span{
+                    font-size: 12px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+
+    //NOSOTROS
+    .nosotros{
+        padding-top: 20%;
+
+        .nosotros__parallax{
+            height: 500px;
+            h2{
+                font-size: 28px;
+            }
+        }
+
+        .nosotros__descripcion{
+            h3{
+                font-size: 22px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+
+    //CONTACTO
+    .contacto{
+        .contacto__parallax{
+            height: 500px;
+            h2{
+                font-size: 28px;
+            }
+        }
+
+        .contacto__descripcion{
+            padding: 20px;
+
+            .contacto__descripcion__datos{
+                border-right:0px;
+                border-bottom: 1px solid #dee2e6;
+                p{
+                    font-size: 14px;
+                    padding-right: 0;
+                }
+                ul li span{
+                    font-size: 13px;
+                }
+            }
+        }
+        .contacto__descripcion__formulario{
+            margin-top: 40px;
+        }
+    }
+
+    //FOOTER
+    footer{
+        .footer1{
+            .row{
+                .primerColumna img{
+                    width: 100%;
+                }
+                .segundoColumna{
+                    padding-top: 50px;
+                    padding-left: 0;
+                    li span{
+                        font-size: 13px;
+                    }
+                }
+                .tercerColumna{
+                    padding-top: 50px;
+                    padding-left: 0;
+                    li span{
+                        font-size: 13px;
+                    }
+                }
+                
+            }
+        }
+
+    }
+
 }
 
     
