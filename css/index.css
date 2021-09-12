@@ -223,7 +223,8 @@ nav li a:hover {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1vw;
-    width: 300px; }
+    width: 300px;
+    display: block; }
 
 .slider__producto {
   position: absolute;

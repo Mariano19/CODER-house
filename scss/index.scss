@@ -237,7 +237,8 @@ nav li a:hover{
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.1vw;
-        width: 300px; ;
+        width: 300px;
+        display: block;
     }
 }
 
@@ -374,7 +375,7 @@ a:hover{
 .nosotros{
     padding-top: 10%;
     .nosotros__parallax{    
-        background-image: url("../img/nosotros.jpg");    
+        background-image: url("../img/nosotros.jpg");          
     }
     
     .nosotros__descripcion{ 
