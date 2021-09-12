@@ -5,7 +5,7 @@
     width: 100%; }
   .contacto .contacto__parallax {
     background-image: url("../img/contacto.jpg");
-    height: 600px;
+    height: 800px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
