@@ -37,3 +37,31 @@ window.onload = function(){
     contenedor.style.visibility = 'hidden';
     contenedor.style.opacity = '0'; 
 }
+
+/*WTSAPP BTN*/
+$(document).scroll(function() {
+    var i = $(this).scrollTop();
+    if (i > 100) {
+      $('#WAButton').fadeIn();
+    } else {
+      $('#WAButton').fadeOut();
+    }
+});
+
+$(function () {
+    $('#WAButton').floatingWhatsApp({
+        phone: '+5491131734465', //WhatsApp Business phone number
+        headerTitle: 'Chatea con nosotros por whatsapp!', //Popup Title
+        popupMessage: 'Hola, como podemos ayudarte?', //Popup Message
+        showPopup: true, //Enables popup display
+        buttonImage: '<img src="./img/icons/whatsapp.svg" />', //Button Image
+        //headerColor: 'crimson', //Custom header color
+        //backgroundColor: 'crimson', //Custom background button color
+        position: "right", //Position: left | right
+        size:"80",
+        zIndex:2,
+
+
+
+    });
+});
